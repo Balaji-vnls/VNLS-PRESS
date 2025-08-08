@@ -1,22 +1,30 @@
-# SLV Press - AI-Powered News (Lovable removed)
+# SLV Press – AI-Powered News Recommendation App
 
-This project has been cleaned of Lovable.dev dependencies and prepared for local development.
+A personalized AI-powered news recommendation app built with:
+- [Vite](https://vitejs.dev/)
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [shadcn-ui](https://ui.shadcn.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-## Changes made
-- Removed references to `lovable-tagger` from `vite.config.ts`.
-- Replaced `index.html` with SLV Press branding.
-- Added a Supabase Edge Function scaffold at `supabase/functions/bert_search/index.ts`.
-- Added `scripts/compute_embeddings.py` to generate and upsert BERT embeddings to Supabase.
-- SearchBar now calls backend BERT search endpoint via `VITE_BERT_SEARCH_URL` env var.
+---
 
-## Local dev
-1. Use Node 18+
-2. Install frontend deps:
-   ```bash
-   npm install
-   npm run dev
-   ```
-3. To enable BERT-based search:
-   - Deploy the Supabase function `supabase/functions/bert_search` or replace with your own endpoint.
-   - Precompute article embeddings using `scripts/compute_embeddings.py` and upload to Supabase.
+## 🚀 Getting Started (Local Development)
 
+### Prerequisites
+- [Node.js](https://nodejs.org/) 18+
+- npm (comes with Node.js) or [pnpm](https://pnpm.io/) / [yarn](https://yarnpkg.com/)
+
+### Steps
+```sh
+# Clone the repository
+git clone https://github.com/Balaji-vnls/SLV-press.git
+
+# Move into the project directory
+cd SLV-press
+
+# Install all project dependencies
+npm install
+
+# Start the development server
+npm run dev
